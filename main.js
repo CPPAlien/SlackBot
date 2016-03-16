@@ -11,7 +11,7 @@ app.get('/', function(req, res){
 	res.send('Hello World')
 })
 
-app.post('/', function(req, res){
+app.post('/receive', function(req, res){
 	sender.toSlack(req.body.text)
 	res.send(req.body.text)
 	console.log(req.body.text)
