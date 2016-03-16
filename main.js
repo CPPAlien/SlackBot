@@ -12,7 +12,8 @@ app.get('/', function(req, res){
 })
 
 app.post('/receive', function(req, res){
-	if (req.body.user_name != 'Qbi') {
+	//filter bot words
+	if (req.body.user_name != 'slackbot') {
 		sender.toSlack(req.body.text)
 	}
 	res.send(req.body.user_name)
