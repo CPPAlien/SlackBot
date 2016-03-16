@@ -1,4 +1,4 @@
-git add main.js sender.js node_modules .gitignore
+git add .
 
 git commit -m 'init'
 
