@@ -20,4 +20,4 @@ function onRequest(req, res) {
 
 http.createServer(onRequest).listen(8181);
 
-console.log('server start ...');
+console.log('server start success...');
