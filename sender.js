@@ -1,7 +1,11 @@
 var request = require('request')
+var sentiment = require('./sentiment')
 
 exports.toSlack = function (content) {
-	var postData = {"text" : content}
+	var postData = {
+		"text" : content,
+		"icon_emoji": sentiment.generateEmo(),
+	}
 
 	request.post({
 		headers: {'content-type' : 'application/json'},
