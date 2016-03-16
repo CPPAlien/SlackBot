@@ -3,7 +3,6 @@ var url = require("url");
 var util = require("util");
 var querystring = require('querystring');
 
-console.log("start ....");
 function onRequest(req, res) {
         res.writeHead(200);
 
@@ -20,3 +19,5 @@ function onRequest(req, res) {
 
 
 http.createServer(onRequest).listen(8181);
+
+console.log('server start ...');
