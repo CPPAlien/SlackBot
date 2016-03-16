@@ -5,8 +5,8 @@ function getRandomNum(Min, Max) {
 	var Rand = Math.random();   
 	return (Min + Math.round(Rand * Range));
 }   
-var num = getRandomNum(0, 3);
 
 exports.generateEmo = function() {
+	var num = getRandomNum(0, 3);
 	return randomEmo[num]
 }
