@@ -1,11 +1,10 @@
 var http = require('http');
 console.log("start ....");
-var ServerListener = function(req, res) {
+function onRequest(req, res) {
         res.writeHead(200);
         res.end('hello world test test test');
+        console.log('received request');
 }
 
-var server = http.createServer(ServerListener);
 
-
-server.listen(8181);
+http.createServer(onRequest).listen(8181);
