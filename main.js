@@ -13,7 +13,7 @@ app.get('/', function(req, res){
 
 app.post('/receive', function(req, res){
 	//filter bot words
-	if (req.body.user_name != 'slackbot') {
+	if (req.body.user_name.toString() != 'slackbot') {
 		sender.toSlack(req.body.text)
 	}
 	res.send(req.body.user_name)
