@@ -4,7 +4,7 @@ var sentiment = require('./sentiment')
 exports.toSlack = function (content) {
 	var postData = {
 		"text" : content,
-		"icon_emoji": sentiment.generateEmo(),
+		"icon_emoji": ':ghost:',
 	}
 
 	request.post({
