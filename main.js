@@ -12,9 +12,11 @@ app.get('/', function(req, res){
 })
 
 app.post('/receive', function(req, res){
-	sender.toSlack(req.body.text)
-	res.send(req.body.text)
-	console.log(req.body.text)
+	if (req.body.user_name != 'Qbi') {
+		sender.toSlack(req.body.text)
+	}
+	res.send(req.body.user_name)
+	console.log(req.body)
 })
 
 var server = app.listen(8181)
