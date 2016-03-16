@@ -1,3 +1,12 @@
+send data to slack
+incomingWebhooks:
+https://api.slack.com/incoming-webhooks
+
+receive data from slack
+outgoingWebhooks:
+https://api.slack.com/outgoing-webhooks
+
+receive data format:
 token: 'u1hVajOFhqkmd1thjX5YPC4y',
   team_id: 'T0G14GY8J',
   team_domain: 'ninty',
@@ -8,4 +17,4 @@ token: 'u1hVajOFhqkmd1thjX5YPC4y',
   user_id: 'U0G13JTTK',
   user_name: 'chris',
   text: '@Qbi 你好',
-  trigger_word: '@Qbi' }
+  trigger_word: '@Qbi'
