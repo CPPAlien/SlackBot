@@ -1,11 +1,17 @@
 {
-  "name": "slackbot",
-  "version": "0.0.1",
-  "dependencies": {
-    "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.1",
-    "express": "^4.13.4",
-    "multer": "^1.1.0",
-    "request": "^2.69.0"
-  }
+    "name": "slackbot",
+    "version": "0.0.1",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CPPAlien/SlackBot"
+    },
+    "license": "UNLICENSED",
+    "dependencies": {
+        "body-parser": "^1.15.0",
+        "cookie-parser": "^1.4.1",
+        "express": "^4.13.4",
+        "multer": "^1.1.0",
+        "request": "^2.69.0"
+    }
 }
