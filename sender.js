@@ -7,7 +7,7 @@ exports.toSlack = function (content, name) {
 
 		var dataBody = {
 			"text": "@"+name+" "+emoji,
-			"icon_emoji": ":qbi:"
+			"icon_emoji": emoji + ""
 		};
 
 		var data = {
